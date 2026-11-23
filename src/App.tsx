@@ -1,3 +1,4 @@
+import Brand10Jital from './components/Brand10Jital';
 import React, { useState, useEffect, useCallback } from 'react';
 import { AppRoute } from './types';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -138,7 +139,8 @@ const AppContent: React.FC = () => {
       case 'home':
         return (
           <HomeView
-            onOpenNewItemModal={() => openNewItemModal('mission')}
+            onOpenNewItemModal={() =>
+      <Brand10Jital /> openNewItemModal('mission')}
             onOpenStreamer={() => navigate('overlay')}
           />
         );
