@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+﻿import React, { useState } from 'react';
 import { AppRoute, SubscriptionTier } from '../types';
 import { cyberAudio } from '../utils/cyberAudio';
 import {
@@ -165,10 +165,10 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
 
   const handleShare = async (customTitle?: string) => {
     const shareUrl = typeof window !== 'undefined' ? window.location.href : '';
-    const title = customTitle || '10JITAL PROD — Ideas in Action.';
+    const title = customTitle || '10JITAL PROD â€” Ideas in Action.';
     const text =
       locale === 'fr'
-        ? 'Découvrez 10JITAL PROD : kits studio, templates, outils SaaS, applications et logiciels créateurs comme JITALX.'
+        ? 'DÃ©couvrez 10JITAL PROD : kits studio, templates, outils SaaS, applications et logiciels crÃ©ateurs comme JITALX.'
         : 'Explore 10JITAL PROD: studio kits, templates, SaaS tools, apps, and creator broadcast software including JITALX.';
 
     if (typeof navigator !== 'undefined' && navigator.share) {
@@ -212,8 +212,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
         price="7.00"
         duration={
           locale === 'fr'
-            ? 'PAIEMENT UNIQUE · ACCÈS À VIE'
-            : 'ONE-TIME PAYMENT · LIFETIME ACCESS'
+            ? 'PAIEMENT UNIQUE Â· ACCÃˆS Ã€ VIE'
+            : 'ONE-TIME PAYMENT Â· LIFETIME ACCESS'
         }
         redirectUrl={GUMROAD_PRODUCT_URL}
         onClose={() => setShowCheckout(false)}
@@ -224,8 +224,8 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
   const shareOrigin = typeof window !== 'undefined' ? encodeURIComponent(window.location.href) : '';
   const shareTextEncoded = encodeURIComponent(
     locale === 'fr'
-      ? '10JITAL PROD — Ideas in Action. Kits studio, outils SaaS, apps et logiciel créateur JITALX.'
-      : '10JITAL PROD — Ideas in Action. Studio kits, SaaS tools, apps & JITALX creator software.'
+      ? '10JITAL PROD â€” Ideas in Action. Kits studio, outils SaaS, apps et logiciel crÃ©ateur JITALX.'
+      : '10JITAL PROD â€” Ideas in Action. Studio kits, SaaS tools, apps & JITALX creator software.'
   );
 
   const trustIcons = [
@@ -237,11 +237,13 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
 
   return (
     <div className="min-h-screen bg-[#0a0910] text-slate-100 flex flex-col font-sans selection:bg-[#ff2a85]/30 selection:text-[#00f0ff] overflow-x-hidden">
+      <video autoPlay loop muted playsInline className="fixed inset-0 z-0 h-full w-full object-cover opacity-50 pointer-events-none"><source src="/videos/Video%20Project%206.mp4" type="video/mp4" /></video>
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-black/75 via-black/50 to-black/90 pointer-events-none" />
       <CommercialNav activeRoute="landing" onNavigate={navigateTo} />
 
       <main className="flex-1">
         {/* ================================================================= */}
-        {/* 1. HERO SECTION — 10JITAL PROD                                    */}
+        {/* 1. HERO SECTION â€” 10JITAL PROD                                    */}
         {/* ================================================================= */}
         <section className="relative border-b border-white/[0.08] overflow-hidden">
           {/* Controlled ambient studio gradient */}
@@ -308,11 +310,11 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
                 {/* Clean unboxed verifiable highlights */}
                 <div className="pt-4 border-t border-white/[0.08] flex flex-wrap items-center gap-x-3 gap-y-2 text-xs text-slate-400">
                   <span className="text-slate-200">{t.hero.trustItems[0]}</span>
-                  <span aria-hidden="true">·</span>
+                  <span aria-hidden="true">Â·</span>
                   <span>{t.hero.trustItems[1]}</span>
-                  <span aria-hidden="true">·</span>
+                  <span aria-hidden="true">Â·</span>
                   <span>{t.hero.trustItems[2]}</span>
-                  <span aria-hidden="true">·</span>
+                  <span aria-hidden="true">Â·</span>
                   <button
                     type="button"
                     onClick={() => void handleShare()}
@@ -510,7 +512,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
                           <span className={isFeatured ? 'text-[#ff7b00] font-semibold' : 'text-[#00f0ff]'}>
                             {item.statusLabel}
                           </span>
-                          <span aria-hidden="true">·</span>
+                          <span aria-hidden="true">Â·</span>
                           <span>{item.categoryLabel}</span>
                         </div>
 
@@ -544,7 +546,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
                         }}
                         className="text-xs font-semibold text-slate-200 hover:text-[#00f0ff] transition-colors cursor-pointer"
                       >
-                        {t.catalog.viewDetails} →
+                        {t.catalog.viewDetails} â†’
                       </button>
 
                       {item.plan.id === 'lifetime' ? (
@@ -584,7 +586,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
         </section>
 
         {/* ================================================================= */}
-        {/* 3. DISCOVER 10JITALX — STUDIO CRAFT & INTERACTIVE SHOWCASE        */}
+        {/* 3. DISCOVER 10JITALX â€” STUDIO CRAFT & INTERACTIVE SHOWCASE        */}
         {/* ================================================================= */}
         <section
           id="studio"
@@ -896,7 +898,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
           <div className="w-full max-w-2xl rounded-2xl border border-white/15 bg-[#120e1e] overflow-hidden shadow-2xl max-h-[90vh] flex flex-col">
             <div className="flex items-center justify-between px-6 py-4 border-b border-white/10">
               <div className="text-xs font-mono-code text-[#00f0ff]">
-                {activeProduct.statusLabel} · {activeProduct.categoryLabel}
+                {activeProduct.statusLabel} Â· {activeProduct.categoryLabel}
               </div>
               <button
                 type="button"
@@ -943,7 +945,7 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
             <div className="px-6 py-4 border-t border-white/10 bg-[#0d0a16] flex flex-wrap items-center justify-between gap-3">
               <button
                 type="button"
-                onClick={() => void handleShare(`10JITALX — ${activeProduct.title}`)}
+                onClick={() => void handleShare(`10JITALX â€” ${activeProduct.title}`)}
                 className="px-3.5 py-2 rounded-lg bg-white/[0.05] hover:bg-white/[0.1] border border-white/10 text-xs font-medium text-slate-200 inline-flex items-center gap-1.5 cursor-pointer"
               >
                 <Share2 className="w-3.5 h-3.5 text-[#00f0ff]" />
@@ -1055,3 +1057,4 @@ export const LandingPage: React.FC<LandingPageProps> = ({ onEnterApp, onNavigate
     </div>
   );
 };
+

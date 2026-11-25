@@ -1,4 +1,4 @@
-import Brand10Jital from './components/Brand10Jital';
+﻿import Brand10Jital from './components/Brand10Jital';
 import React, { useState, useEffect, useCallback } from 'react';
 import { AppRoute } from './types';
 import { AuthProvider, useAuth } from './context/AuthContext';
@@ -172,6 +172,8 @@ const AppContent: React.FC = () => {
           : 'bg-[#090d16] selection:bg-cyan-500/30 selection:text-cyan-200'
       }`}
     >
+      <video autoPlay loop muted playsInline className="fixed inset-0 z-0 h-full w-full object-cover opacity-50 pointer-events-none"><source src="/videos/Video%20Project%206.mp4" type="video/mp4" /></video>
+      <div className="fixed inset-0 z-0 bg-gradient-to-b from-black/75 via-black/50 to-black/90 pointer-events-none" />
       <CyberBackground />
 
       <Header
@@ -235,7 +237,7 @@ const AppContent: React.FC = () => {
           </a>
         </div>
         <span className="text-[11px] font-mono-code text-slate-500/90 select-none">
-          JITALX · © 2026 10JITAL PROD
+          JITALX Â· Â© 2026 10JITAL PROD
         </span>
       </footer>
 
@@ -263,3 +265,4 @@ export default function App() {
     </ErrorBoundary>
   );
 }
+
