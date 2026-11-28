@@ -1,7 +1,7 @@
-import { PaymentBackendStatus, SubscriptionTier } from '../types';
+﻿import { PaymentBackendStatus, SubscriptionTier } from '../types';
 
-// Official Gumroad product link for JITALX Full Access Launch Offer (€7 one-time)
-export const GUMROAD_PRODUCT_URL = 'https://gumroad.com/l/jitalx-full-access';
+// Official Gumroad product link for JITALX Full Access Launch Offer (â‚¬7 one-time)
+export const GUMROAD_PRODUCT_URL = 'https://10jital.gumroad.com/l/JITALX';
 
 export interface GumroadPingPayload {
   seller_id: string;
@@ -106,71 +106,71 @@ export const SUBSCRIPTION_PLANS: SubscriptionPlanDefinition[] = [
   {
     id: 'free',
     name: 'Starter Free',
-    tagline: 'Découvrez JITALX gratuitement et organisez vos campagnes multi-jeux.',
-    priceDisplay: '0 €',
-    billingCycle: 'Gratuit · Sans carte bancaire',
+    tagline: 'DÃ©couvrez JITALX gratuitement et organisez vos campagnes multi-jeux.',
+    priceDisplay: '0 â‚¬',
+    billingCycle: 'Gratuit Â· Sans carte bancaire',
     numericPriceEur: 0,
     stripePriceEnvKey: 'N/A',
     stripePriceId: '',
     features: [
-      'Tableau de bord tactique & Radar Holo 360°',
+      'Tableau de bord tactique & Radar Holo 360Â°',
       'Suivi Missions, Collectibles, Garage, Objectifs & Notes',
-      'Sauvegarde locale instantanée + Export / Import JSON',
-      'Streamer Studio OBS (Chroma, Transparent, Sunset Néon)',
-      '3 univers de démonstration personnalisables inclus',
+      'Sauvegarde locale instantanÃ©e + Export / Import JSON',
+      'Streamer Studio OBS (Chroma, Transparent, Sunset NÃ©on)',
+      '3 univers de dÃ©monstration personnalisables inclus',
     ],
     limits: {
       customProfiles: '3 univers inclus + locaux',
-      cloudSnapshots: 'Snapshots Cloud manuels (compte connecté)',
-      overlayBranding: 'Signature discrète JITALX • 10JITAL',
+      cloudSnapshots: 'Snapshots Cloud manuels (compte connectÃ©)',
+      overlayBranding: 'Signature discrÃ¨te JITALX â€¢ 10JITAL',
       supportLevel: 'Documentation',
     },
   },
   {
     id: 'lifetime',
     name: 'JITALX Full Access',
-    badge: 'OFFRE DE LANCEMENT · GUMROAD',
-    tagline: 'Paiement unique sur Gumroad pour soutenir JITALX et accéder à l’édition complète.',
-    priceDisplay: '7 €',
-    billingCycle: 'Paiement unique sur Gumroad · Offre de lancement',
+    badge: 'OFFRE DE LANCEMENT Â· GUMROAD',
+    tagline: 'Paiement unique sur Gumroad pour soutenir JITALX et accÃ©der Ã  lâ€™Ã©dition complÃ¨te.',
+    priceDisplay: '7 â‚¬',
+    billingCycle: 'Paiement unique sur Gumroad Â· Offre de lancement',
     numericPriceEur: 7,
     stripePriceEnvKey: 'GUMROAD',
     stripePriceId: STRIPE_CONFIG.priceIds.lifetime,
     gumroadUrl: GUMROAD_PRODUCT_URL,
     recommended: true,
     features: [
-      '7 € — Paiement sécurisé directement sur Gumroad',
-      'Tous les thèmes (Sunset Néon, Secteur Cyber, Monde Libre)',
+      '7 â‚¬ â€” Paiement sÃ©curisÃ© directement sur Gumroad',
+      'Tous les thÃ¨mes (Sunset NÃ©on, Secteur Cyber, Monde Libre)',
       'Streamer Studio 16:9 (Twitch/YouTube) & 9:16 (TikTok Live)',
-      'Profils personnalisés & sauvegardes Cloud Firestore',
-      'Aucune donnée bancaire saisie dans JITALX',
+      'Profils personnalisÃ©s & sauvegardes Cloud Firestore',
+      'Aucune donnÃ©e bancaire saisie dans JITALX',
     ],
     limits: {
-      customProfiles: 'Illimités',
-      cloudSnapshots: 'Instantanés Cloud & Export JSON',
+      customProfiles: 'IllimitÃ©s',
+      cloudSnapshots: 'InstantanÃ©s Cloud & Export JSON',
       overlayBranding: 'Option masquage signature incluse',
-      supportLevel: 'Mises à jour incluses',
+      supportLevel: 'Mises Ã  jour incluses',
     },
   },
   {
     id: 'pro_monthly',
     name: 'Pro Mensuel',
-    badge: 'STRIPE · ABONNEMENT',
-    tagline: 'Formule mensuelle Stripe Checkout (4,99 €/mois) activable dès ajout des clés serveur.',
-    priceDisplay: '4,99 €',
-    billingCycle: '/ mois · Stripe Checkout',
+    badge: 'STRIPE Â· ABONNEMENT',
+    tagline: 'Formule mensuelle Stripe Checkout (4,99 â‚¬/mois) activable dÃ¨s ajout des clÃ©s serveur.',
+    priceDisplay: '4,99 â‚¬',
+    billingCycle: '/ mois Â· Stripe Checkout',
     numericPriceEur: 4.99,
     stripePriceEnvKey: 'STRIPE_PRICE_PRO_MONTHLY',
     stripePriceId: STRIPE_CONFIG.priceIds.pro_monthly,
     features: [
-      'Toutes les fonctionnalités Starter Free',
-      'Profils de jeux personnalisés illimités',
-      'Instantanés Cloud Firestore multi-appareils',
-      'Statistiques avancées & alertes HUD',
-      'Gestion d’abonnement via Portail Client Stripe',
+      'Toutes les fonctionnalitÃ©s Starter Free',
+      'Profils de jeux personnalisÃ©s illimitÃ©s',
+      'InstantanÃ©s Cloud Firestore multi-appareils',
+      'Statistiques avancÃ©es & alertes HUD',
+      'Gestion dâ€™abonnement via Portail Client Stripe',
     ],
     limits: {
-      customProfiles: 'Illimités',
+      customProfiles: 'IllimitÃ©s',
       cloudSnapshots: 'Multi-appareils',
       overlayBranding: 'Personnalisable',
       supportLevel: 'Support prioritaire par email',
@@ -179,25 +179,25 @@ export const SUBSCRIPTION_PLANS: SubscriptionPlanDefinition[] = [
   {
     id: 'creator',
     name: 'Creator Studio',
-    badge: 'STRIPE · CRÉATEURS',
-    tagline: 'Pensé pour les créateurs Twitch, YouTube et TikTok Live multi-jeux (14,99 €/mois).',
-    priceDisplay: '14,99 €',
-    billingCycle: '/ mois · Stripe Checkout',
+    badge: 'STRIPE Â· CRÃ‰ATEURS',
+    tagline: 'PensÃ© pour les crÃ©ateurs Twitch, YouTube et TikTok Live multi-jeux (14,99 â‚¬/mois).',
+    priceDisplay: '14,99 â‚¬',
+    billingCycle: '/ mois Â· Stripe Checkout',
     numericPriceEur: 14.99,
     stripePriceEnvKey: 'STRIPE_PRICE_CREATOR_MONTHLY',
     stripePriceId: STRIPE_CONFIG.priceIds.creator,
     features: [
       'Tous les avantages JITALX Full Access',
-      'Widgets OBS avancés (Mission active, Compteur défi, URL Source)',
-      'Scènes 16:9 & 9:16 dédiées au streaming multi-plateformes',
+      'Widgets OBS avancÃ©s (Mission active, Compteur dÃ©fi, URL Source)',
+      'ScÃ¨nes 16:9 & 9:16 dÃ©diÃ©es au streaming multi-plateformes',
       'Connecteur OBS WebSocket v5 local & packs overlays',
-      'Gestion d’abonnement via Portail Client Stripe',
+      'Gestion dâ€™abonnement via Portail Client Stripe',
     ],
     limits: {
-      customProfiles: 'Illimités + Scènes multi-live',
-      cloudSnapshots: 'Illimités + Restauration rapide',
+      customProfiles: 'IllimitÃ©s + ScÃ¨nes multi-live',
+      cloudSnapshots: 'IllimitÃ©s + Restauration rapide',
       overlayBranding: 'White-label',
-      supportLevel: 'Support créateur direct',
+      supportLevel: 'Support crÃ©ateur direct',
     },
   },
 ];
@@ -297,3 +297,4 @@ export async function openStripeBillingPortal(params: {
     return { ok: false, error: 'Unable to reach Stripe Billing Portal endpoint.' };
   }
 }
+

@@ -1,4 +1,4 @@
-﻿import { PaymentBackendStatus, SubscriptionTier } from '../types';
+import { PaymentBackendStatus, SubscriptionTier } from '../types';
 
 // Official Gumroad product link for JITALX Full Access Launch Offer (â‚¬7 one-time)
 export const GUMROAD_PRODUCT_URL = 'https://10jital.gumroad.com/l/JITALX';

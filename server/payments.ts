@@ -3,7 +3,7 @@ import fs from 'node:fs';
 import path from 'node:path';
 import type { Express, Request, Response } from 'express';
 
-export const OFFICIAL_GUMROAD_URL = 'https://gumroad.com/l/jitalx-full-access';
+export const OFFICIAL_GUMROAD_URL = 'https://10jital.gumroad.com/l/JITALX';
 export const GUMROAD_MIN_PRICE_CENTS = 700; // 7.00 EUR
 const MAX_REPLAY_CACHE = 5000;
 const STRIPE_TOLERANCE_SECONDS = 300;
